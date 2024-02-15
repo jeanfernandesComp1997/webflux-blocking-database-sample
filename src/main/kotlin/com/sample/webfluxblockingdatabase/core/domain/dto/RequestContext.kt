@@ -1,8 +1,8 @@
 package com.sample.webfluxblockingdatabase.core.domain.dto
 
 
-class RequestContext(private val purchaseOrderRequestDto: PurchaseOrderRequestDto) {
-    private val productDto: ProductDto? = null
-    private val transactionRequestDto: TransactionRequestDto? = null
-    private val transactionResponseDto: TransactionResponseDto? = null
+class RequestContext(val purchaseOrderRequestDto: PurchaseOrderRequestDto) {
+    var productDto: ProductDto? = null
+    var transactionRequestDto: TransactionRequestDto? = null
+    var transactionResponseDto: TransactionResponseDto? = null
 }
