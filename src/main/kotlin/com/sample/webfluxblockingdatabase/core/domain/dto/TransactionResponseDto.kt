@@ -4,6 +4,6 @@ import com.sample.webfluxblockingdatabase.core.domain.enums.TransactionStatus
 
 data class TransactionResponseDto(
     val userId: Int,
-    val amount: Int,
+    val amount: Double,
     val status: TransactionStatus
 )

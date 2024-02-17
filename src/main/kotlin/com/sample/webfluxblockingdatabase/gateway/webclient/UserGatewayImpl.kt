@@ -19,7 +19,7 @@ class UserGatewayImpl(
     override fun authorizeTransaction(requestDto: TransactionRequestDto): Mono<TransactionResponseDto> {
         return this.client
             .post()
-            .uri("transaction")
+            .uri("transactions")
             .bodyValue(requestDto)
             .retrieve()
             .bodyToMono(TransactionResponseDto::class.java)

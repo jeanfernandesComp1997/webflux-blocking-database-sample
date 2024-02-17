@@ -6,6 +6,6 @@ data class PurchaseOrderResponseDto(
     val orderId: Int,
     val userId: Int,
     val productId: String,
-    val amount: Int,
+    val amount: Double,
     val status: OrderStatus
 )

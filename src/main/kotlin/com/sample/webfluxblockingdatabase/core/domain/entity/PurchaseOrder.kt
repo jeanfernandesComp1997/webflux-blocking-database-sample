@@ -12,6 +12,6 @@ class PurchaseOrder(
     var id: Int? = 0,
     val productId: String,
     val userId: Int,
-    val amount: Int,
+    val amount: Double,
     val status: OrderStatus
 )
