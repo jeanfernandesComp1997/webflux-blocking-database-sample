@@ -13,6 +13,6 @@ interface PurchaseOrderApi {
     @PostMapping
     fun order(@RequestBody requestDtoMono: Mono<PurchaseOrderRequestDto>): Mono<ResponseEntity<PurchaseOrderResponseDto>>
 
-    @GetMapping
-    fun getOrdersByUserId(@PathVariable userId: Int): Flux<PurchaseOrderResponseDto>
+    @GetMapping("{id}")
+    fun getOrdersByUserId(@PathVariable("id") userId: Int): Flux<PurchaseOrderResponseDto>
 }
